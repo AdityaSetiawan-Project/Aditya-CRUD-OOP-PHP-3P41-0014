@@ -36,6 +36,13 @@ $detail = $db->editData($_GET['id']);
                 <label for="nohp" class="form-label">No HP</label>
                 <input type="text" class="form-control" id="nohp" name="nohp" value="<?php echo $dataUser['nohp']; ?>">
             </div>
+            <div class="mb-3">
+                <label for="gender" class="form-label">Jenis Kelamin</label>
+                    <select class="form-control" id="gender" name="gender">
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+            </div>
             <?php } ?>
             
             <button type="submit" class="btn btn-primary">Submit</button>
