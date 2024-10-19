@@ -20,8 +20,8 @@ class Database{
     }
 
     // Function untuk menambah data
-    function tambahData($nama, $alamat, $nohp){
-        mysqli_query($this->connect,"INSERT INTO tb_user_0014 (nama, alamat, nohp) VALUES ('$nama', '$alamat', '$nohp')");
+    function tambahData($nama, $alamat, $nohp, $gender) {
+        mysqli_query($this->connect, "INSERT INTO tb_user_0014 VALUES (NULL, '$nama', '$alamat', '$nohp', '$gender')");
     }
 
     // Function untuk mengambil data user berdasarkan id
@@ -32,8 +32,8 @@ class Database{
     }
 
     // Function untuk mengupdate data
-    function updateData($id, $nama, $alamat, $nohp){
-        mysqli_query($this->connect, "UPDATE tb_user_0014 SET nama='$nama', alamat='$alamat', nohp='$nohp' WHERE id='$id'");
+    function updateData($id, $nama, $alamat, $nohp, $gender) {
+        mysqli_query($this->connect, "UPDATE tb_user_0014 SET nama='$nama', alamat='$alamat', nohp='$nohp', gender='$gender' WHERE id=$id");
     }
 
     // Function untuk menghapus data
