@@ -43,6 +43,7 @@ $db = new Database();
                 <th scope="col">Nama</th>
                 <th scope="col">Alamat</th>
                 <th scope="col">No Hp</th>
+                <th scope="col">Gender</th>
                 <th scope="col">Aksi</th>
             </tr>
         </thead>
@@ -56,6 +57,7 @@ $db = new Database();
                     <td><?php echo htmlspecialchars($dataUser['nama']); ?></td>
                     <td><?php echo htmlspecialchars($dataUser['alamat']); ?></td>
                     <td><?php echo htmlspecialchars($dataUser['nohp']); ?></td>
+                    <td><?php echo htmlspecialchars($dataUser['gender']); ?></td> <!-- Tampilkan nilai gender -->
                     <td>
                         <a href="edit.php?id=<?php echo $dataUser['id'] ?>&nomor=<?php echo $nomor - 1 ?>" class="btn btn-warning btn-sm">EDIT</a>
                         <a href="proses.php?id=<?php echo $dataUser['id'] ?>&aksi=hapus" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
