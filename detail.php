@@ -41,6 +41,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
             <li class="list-group-item">Nama: <?php echo $dataUser["nama"]; ?></li>
             <li class="list-group-item">Alamat: <?php echo $dataUser["alamat"]; ?></li>
             <li class="list-group-item">No HP: <?php echo $dataUser["nohp"]; ?></li>
+            <li class="list-group-item">Jenis Kelamin: <?php echo $dataUser["gender"]; ?></li>
         <?php
         }
         ?>
